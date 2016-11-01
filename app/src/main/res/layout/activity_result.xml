@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shengxiong.soulmatefinder.ui.ResultActivity">
+
+    <Button
+        android:text="Upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="userUpload"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGarbled"
+        android:layout_below="@+id/resulttextView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="RETRIEVE AND EVALUATE AND UPLOAD RESULT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button6"
+        android:fontFamily="casual"
+        android:onClick="userRetrieve"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myTextView"
+        android:hint="hint"
+        android:layout_below="@+id/button8"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPermuted"
+        android:layout_below="@+id/textViewGarbled"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resulttextView"
+        android:hint="hint"
+        android:layout_below="@+id/myTextView"
+        android:layout_alignLeft="@+id/myTextView"
+        android:layout_alignStart="@+id/myTextView"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGarbledCircuit"
+        android:layout_below="@+id/textViewPermuted"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="RETRIEVERETURN AND SHOW RESULTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:fontFamily="casual"
+        android:onClick="userRetrieveReturn"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewGarbledCircuit"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/listView"/>
+
+
+</RelativeLayout>
